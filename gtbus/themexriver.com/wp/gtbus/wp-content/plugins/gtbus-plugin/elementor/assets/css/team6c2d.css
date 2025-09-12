@@ -1,0 +1,134 @@
+
+.txt-team-item-2 {
+    min-height: 700px;
+    padding: 0px 15px 15px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .txt-team-item-2:after {
+    left: 0;
+    bottom: 60px;
+    width: 100%;
+    content: "";
+    height: 65%;
+    position: absolute;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background-color: rgba(3, 6, 23, 0.03);
+  }
+  .txt-team-item-2:before {
+    left: 0;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: var(--txt-gradient-2_2);
+  }
+  .txt-team-item-2 .team-img {
+    margin: 0 auto;
+    max-width: 315px;
+    margin-bottom: 30px;
+    border-bottom: 6px solid #00DDD0;
+  }
+  .txt-team-item-2 .team-text {
+    z-index: 1;
+    height: 103px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .txt-team-item-2 .team-text:before {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 0%;
+    content: "";
+    position: absolute;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: var(--txt-gradient-2_2);
+  }
+  .txt-team-item-2 .team-text .name-degi {
+    padding: 20px 15px;
+    margin-bottom: 13px;
+    padding-bottom: 18px;
+    background-color: rgba(3, 6, 23, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .txt-team-item-2 .team-text .name-degi .team_title a {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: var(--txt-title-color-1);
+  }
+  .txt-team-item-2 .team-text .name-degi span {
+    color: #5956F0;
+    font-size: 16px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .txt-team-item-2 .team-text .team-social {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .txt-team-item-2 .team-text .team-social a {
+    width: 36px;
+    color: #fff;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 8px;
+    border-radius: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .txt-team-item-2 .team-text .team-social a:hover {
+    color: #00E9CC;
+    background-color: #fff;
+  }
+  .txt-team-item-2:hover {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  .txt-team-item-2:hover:before {
+    width: 100%;
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .txt-team-item-2:hover:after {
+    bottom: 0;
+    height: 75%;
+  }
+  .txt-team-item-2:hover .team-text {
+    height: 190px;
+  }
+  .txt-team-item-2:hover .team-text:before {
+    height: 100%;
+  }
+  .txt-team-item-2:hover .team-text .name-degi .team_title a {
+    color: #fff;
+  }
+  .txt-team-item-2:hover .team-text .name-degi span {
+    color: #fff;
+  }
+  .txt-team-item-2:hover .team-text .team-social {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }

@@ -1,0 +1,125 @@
+
+.txt-get-in-touch-content {
+    z-index: 1;
+    overflow: hidden;
+    margin: 0px 135px;
+    padding: 100px 0px;
+  }
+  .txt-get-in-touch-content .txt-get-in-touch-img {
+    right: 150px;
+    bottom: -30px;
+  }
+  .txt-get-in-touch-content .txt-get-touch-circle {
+    top: 0;
+    z-index: -1;
+    right: 150px;
+    width: 384px;
+    height: 384px;
+    opacity: 0.14;
+    border-radius: 100%;
+    background-color: #00DDD0;
+  }
+  
+  .txt-get-in-touch-text {
+    max-width: 700px;
+  }
+  .txt-get-in-touch-text .txt-section-title-2 .txt_sec_title {
+    color: #fff;
+    font-size: 40px;
+  }
+  .txt-get-in-touch-text .txt-section-title-2 p {
+    max-width: 655px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .txt-get-in-touch-text .cta-btn {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 50px;
+    padding: 20px 35px;
+    border-radius: 50px;
+    white-space: nowrap;
+    white-space: nowrap;
+    -webkit-transition: all 200ms linear 0ms;
+    transition: all 200ms linear 0ms;
+    background: var(--txt-gradient-2);
+    font-family: var(--txt-alt-font-1);
+    background-size: 200%, 1px;
+  }
+  .txt-get-in-touch-text .cta-btn:hover {
+    background-position: 120%;
+  }
+  .txt-get-in-touch-text .cta-btn i {
+    margin-left: 8px;
+  }
+  
+  @media (max-width: 1700px) {
+    .txt-get-in-touch-content {
+      margin: 0px 40px;
+    }
+  }
+  @media (max-width: 1500px) {
+    .txt-get-in-touch-content {
+      margin: 0px;
+    }
+  }
+  @media (max-width: 1300px) {
+    .txt-get-in-touch-text {
+      max-width: 630px;
+    }
+    .txt-get-in-touch-content .txt-get-in-touch-img {
+      right: 0;
+    }
+    .txt-get-in-touch-content .txt-get-touch-circle {
+      right: 0;
+    }
+  }
+  @media (max-width: 1150px) {
+    .txt-get-in-touch-content {
+      overflow: hidden;
+      padding: 100px 15px;
+    }
+    .txt-get-in-touch-text {
+      max-width: 630px;
+    }
+    .txt-get-in-touch-content .txt-get-in-touch-img {
+      right: -100px;
+    }
+    .txt-get-in-touch-content .txt-get-touch-circle {
+      right: -100px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .txt-get-in-touch-text {
+      max-width: 500px;
+    }
+    .txt-get-in-touch-text .txt-section-title-2 .txt_sec_title {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 991px) {
+    .txt-get-in-touch-content .txt-get-in-touch-img {
+      display: none;
+    }
+    .txt-get-in-touch-content .txt-get-touch-circle {
+      display: none;
+    }
+    .txt-get-in-touch-text {
+      max-width: 100%;
+      text-align: center;
+    }
+    .txt-get-in-touch-text .txt-section-title-2 p {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 570px) {
+    .txt-get-in-touch-text .cta-btn {
+      font-size: 16px;
+      margin-top: 25px;
+      padding: 15px 25px;
+    }
+  }
+  @media (max-width: 480px) {
+    .txt-get-in-touch-text .txt-section-title-2 .txt_sec_title {
+      font-size: 28px;
+    }
+  }

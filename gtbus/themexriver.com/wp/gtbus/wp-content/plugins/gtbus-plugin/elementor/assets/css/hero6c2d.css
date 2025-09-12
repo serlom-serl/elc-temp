@@ -1,0 +1,263 @@
+
+/*----------------------------------------------------*/
+/*Banner Section*/
+/*----------------------------------------------------*/
+
+@-webkit-keyframes marqueeTop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  @keyframes marqueeTop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  @-webkit-keyframes border_animation {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+    }
+    20% {
+      -webkit-transform: scale(1.24);
+      transform: scale(1.24);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(2.1);
+      transform: scale(2.1);
+      opacity: 0;
+    }
+  }
+  @keyframes border_animation {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+    }
+    20% {
+      -webkit-transform: scale(1.24);
+      transform: scale(1.24);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(2.1);
+      transform: scale(2.1);
+      opacity: 0;
+    }
+  }
+  .txt-banner-section-1 {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1920px;
+    padding: 250px 0px 225px;
+  }
+  .txt-banner-section-1:before, .txt-banner-section-1:after {
+    content: "";
+    width: 215px;
+    height: 590px;
+    position: absolute;
+    background: var(--txt-gradient-1);
+  }
+  .txt-banner-section-1:before {
+    left: 0;
+    bottom: -41%;
+    -webkit-transform: rotate(-39.714deg);
+            transform: rotate(-39.714deg);
+  }
+  .txt-banner-section-1:after {
+    right: 0;
+    bottom: -37%;
+    -webkit-transform: rotate(45.705deg);
+            transform: rotate(45.705deg);
+  }
+  .txt-banner-section-1 .txt-banner-img-1 {
+    top: 0;
+    z-index: -2;
+    right: -150px;
+    -webkit-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .txt-banner-section-1 .txt-banner-img-1.active {
+    right: 0;
+    -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+  }
+  .txt-banner-section-1 .txt-banner-shape {
+    top: 0;
+    left: -9%;
+    z-index: -1;
+    width: 105%;
+    opacity: 0.15;
+    height: 0%;
+    -webkit-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    -webkit-transform: rotate(51.227deg);
+            transform: rotate(51.227deg);
+    background: -webkit-gradient(linear, left top, right top, from(#5D56EF), color-stop(64.08%, #F950BA));
+    background: linear-gradient(90deg, #5D56EF 0%, #F950BA 64.08%);
+  }
+  .txt-banner-section-1 .txt-banner-shape.active {
+    height: 100%;
+    -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+  }
+  
+  .txt-banner-text-scroller {
+    left: -4%;
+    z-index: -1;
+    bottom: -20%;
+    width: 700px;
+    height: 800px;
+    transform: rotate(-42deg);
+    -webkit-transform: rotate(-35deg);
+  }
+  .txt-banner-text-scroller h2 {
+    opacity: 0.05;
+    font-size: 220px;
+    font-weight: 700;
+    white-space: nowrap;
+    display: inline-block;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    color: var(--txt-title-color);
+    -webkit-animation: marqueeTop 10s linear infinite;
+            animation: marqueeTop 10s linear infinite;
+  }
+  
+  .txt-banner-text-1 {
+    max-width: 675px;
+  }
+  .txt-banner-text-1 .txt_banner_slug {
+    margin-bottom: 12px;
+    display: inline-block;
+    font-family: var(--txt-heading-1);
+  }
+  .txt-banner-text-1 h1 {
+    font-size: 70px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    color: var(--txt-title-color-1);
+  }
+  .txt-banner-text-1 p {
+    max-width: 630px;
+    padding-bottom: 50px;
+  }
+  .txt-banner-text-1 .txt-banner-btn-grp {
+    gap: 20px;
+  }
+  .txt-banner-text-1 .txt-video-play a .inner-icon {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 10px solid rgba(3, 6, 23, 0.05);
+  }
+  .txt-banner-text-1 .txt-video-play a .inner-icon .video_btn_border {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    position: absolute;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    border: 1px solid #5D56EF;
+    -webkit-animation: border_animation 3.9s linear 0s infinite;
+    animation: border_animation 3.9s linear 0s infinite;
+  }
+  .txt-banner-text-1 .txt-video-play a .inner-icon .video_btn_border.border_wrap-2 {
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+  }
+  .txt-banner-text-1 .txt-video-play a .inner-icon .video_btn_border.border_wrap-3 {
+    -webkit-animation-delay: 2.6s;
+    animation-delay: 2.6s;
+  }
+  .txt-banner-text-1 .txt-video-play a .inner-text {
+    font-family: var(--txt-alt-font-1);
+  }
+  
+  @media (max-width: 1800px) {
+    .txt-banner-text-scroller {
+      bottom: -27%;
+    }
+  }
+  @media (max-width: 1800px) {
+    .txt-banner-text-scroller {
+      bottom: -31%;
+    }
+  }
+  @media (max-width: 1500px) {
+    .txt-banner-text-scroller {
+      bottom: -24%;
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+    }
+    .txt-banner-text-scroller h2 {
+      font-size: 165px;
+    }
+  }
+  @media (max-width: 1366px) {
+    .txt-banner-text-scroller h2 {
+      font-size: 155px;
+    }
+  }
+  @media (max-width: 1350px) {
+    .txt-banner-text-scroller {
+      display: none;
+    }
+  }
+  @media (max-width: 1024px) {
+    .txt-banner-section-1:before,
+    .txt-banner-section-1:after {
+      display: none;
+    }
+    .txt-banner-section-1 .txt-banner-img-1 {
+      display: none;
+    }
+    .txt-banner-section-1 .txt-banner-shape {
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+  }
+  @media (max-width: 680px) {
+    .txt-banner-text-1 h1 {
+      font-size: 40px;
+    }
+    .txt-banner-section-1 {
+      padding: 250px 0px 150px;
+    }
+  }
+  @media (max-width: 480px) {
+    .txt-banner-section-1 {
+      padding: 200px 0px 120px;
+    }
+    .txt-banner-btn-grp {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }
+  @media (max-width: 360px) {
+    .txt-banner-text-1 h1 {
+      font-size: 36px;
+    }
+  }

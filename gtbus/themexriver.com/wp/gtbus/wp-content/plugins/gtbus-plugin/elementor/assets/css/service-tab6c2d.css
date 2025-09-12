@@ -1,0 +1,201 @@
+.txt-service-section-2 {
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow: hidden;
+  }
+  .txt-service-section-2:before {
+    top: 0;
+    left: 0;
+    content: "";
+    height: 0%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+    background: rgba(3, 6, 23, 0.03);
+  }
+  .txt-service-section-2.active:before {
+    height: 100%;
+  }
+  .txt-service-section-2 .txt-service-shape1 {
+    right: 0;
+    top: -38%;
+    z-index: -1;
+    opacity: 0.08;
+    -webkit-animation: txt_rotate_1 10s linear infinite;
+            animation: txt_rotate_1 10s linear infinite;
+  }
+  .txt-service-section-2 .txt-service-shape2 {
+    left: -5%;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.08;
+    -webkit-animation: txt_rotate_3 12s linear infinite;
+            animation: txt_rotate_3 12s linear infinite;
+  }
+  .txt-service-section-2 .txt-service-shape3 {
+    left: 10%;
+    z-index: -1;
+    bottom: -20%;
+    opacity: 0.08;
+    -webkit-animation: txt_rotate_1 12s linear infinite;
+            animation: txt_rotate_1 12s linear infinite;
+  }
+  
+  .txt-service-top-content {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .txt-service-top-content .txt-section-title-2 {
+    max-width: 540px;
+  }
+  .txt-service-top-content .txt-service-top-text {
+    max-width: 500px;
+  }
+  
+  .txt-service-content-2 {
+    gap: 40px;
+  }
+  
+  @-webkit-keyframes spin2 {
+    0% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    50% {
+      -webkit-transform: rotateY(30deg);
+      transform: rotateY(30deg);
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+  }
+  
+  @keyframes spin2 {
+    0% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    50% {
+      -webkit-transform: rotateY(30deg);
+      transform: rotateY(30deg);
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+  }
+  .txt-service-img-2 {
+    -webkit-animation: spin2 8s linear infinite;
+            animation: spin2 8s linear infinite;
+  }
+  
+  .txt-service-accordion {
+    max-width: 655px;
+  }
+  .txt-service-accordion .accordion-item {
+    border: none;
+    position: relative;
+    margin-bottom: 45px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background-color: transparent;
+  }
+  .txt-service-accordion .accordion-item .accordion-button {
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background-color: transparent;
+    color: var(--txt-title-color-1);
+    font-family: var(--txt-heading-2);
+  }
+  .txt-service-accordion .accordion-item .accordion-button:after {
+    display: none;
+  }
+  .txt-service-accordion .accordion-item .accordion-button i {
+    margin-right: 10px;
+  }
+  .txt-service-accordion .accordion-item .accordion-button:focus {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .txt-service-accordion .accordion-item .accordion-button:not(.collapsed) {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding-left: 20px;
+  }
+  .txt-service-accordion .accordion-item .accordion-button:not(.collapsed) i {
+    display: none;
+  }
+  .txt-service-accordion .accordion-item.faq_active {
+    background-color: #fff;
+    padding: 30px 10px 30px 100px;
+  }
+  .txt-service-accordion .accordion-item .accordion-body {
+    padding-top: 10px;
+  }
+  .txt-service-accordion .accordion-item .accordion-body .service-serial {
+    top: -20px;
+    left: 5px;
+    font-size: 140px;
+    font-weight: 700;
+    position: absolute;
+    color: rgba(3, 6, 23, 0.04);
+    font-family: var(--txt-heading-2);
+  }
+  .txt-service-accordion .accordion-item .accordion-body .service-text {
+    font-size: 16px;
+  }
+  .txt-service-accordion .accordion-item .accordion-body a {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: var(--txt-heading-2);
+  }
+  .txt-service-accordion .accordion-item .accordion-body a i {
+    margin-left: 8px;
+  }
+  
+  @media (max-width: 1350px) {
+    .txt-service-accordion {
+      max-width: 605px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .txt-service-img-2 {
+      display: none;
+    }
+    .txt-service-accordion {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 680px) {
+    .txt-service-section-2 .txt-service-shape2,
+    .txt-service-section-2 .txt-service-shape1 {
+      display: none;
+    }
+    .txt-service-accordion .accordion-item.faq_active {
+      padding-left: 30px;
+    }
+    .txt-service-accordion .accordion-item .accordion-button:not(.collapsed) {
+      padding-left: 0;
+    }
+    .txt-service-accordion .accordion-item .accordion-button {
+      font-size: 18px;
+    }
+    .txt-service-accordion .accordion-item .accordion-body {
+      padding-left: 0;
+    }
+  }

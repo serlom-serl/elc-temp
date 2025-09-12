@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+themexriver.com	TRUE	/wp/gtbus/	FALSE	1999999999	woocommerce_items_in_cart	1
+themexriver.com	TRUE	/wp/gtbus/	FALSE	1999999999	wp_woocommerce_session_9c071c9d862a8766a75900f9b00440b7	t_55dce2861c189786f1390f9c0f682a%7C%7C1757813954%7C%7C1757810354%7C%7Cd27974e8e67f85f80e7b318ea3e332a5
+themexriver.com	TRUE	/wp/gtbus/	FALSE	1999999999	woocommerce_cart_hash	859cacd57477d4c6339307c739da258b
+
